@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - mlflow=1.14.1
+  - python=3.8
   - ipython=7.21.0
   - notebook=6.2.0
   - jupyterlab=3.0.10
@@ -13,5 +14,7 @@ dependencies:
   - pandas=1.2.3
   - git=2.30.2
   - pip=20.3.3
+  - requests=2.24.0
   - pip:
       - wandb==0.10.31
+      - hydra-joblib-launcher==1.1.2
