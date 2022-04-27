@@ -9,7 +9,7 @@ dependencies:
   - notebook=6.2.0
   - jupyterlab=3.0.10
   - cookiecutter=1.7.2
-  - hydra-core=1.1.2
+  - hydra-core=1.1.1
   - matplotlib=3.3.4
   - pandas=1.2.3
   - git=2.30.2
