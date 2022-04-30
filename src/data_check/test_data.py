@@ -72,3 +72,17 @@ def test_price_range(data: pd.DataFrame, min_price: float, max_price: float):
     Checks that the price range is between min_price and max_price.
     """
     assert data['price'].between(min_price, max_price).all()
+
+
+def test_minimum_nights(data):
+    """
+    Test if we have only listings available for <=365 days
+    """
+    assert data['minimum_nights'].between(0,365,inclusive='both').all()
+
+
+#def test_minimum_nights(data):
+#    """
+#    Test if the listings have reviews after Jan 2013
+#    """
+#    assert data['last_review'].gt(pd.Timestamp(2013, 1, 1, 12))
